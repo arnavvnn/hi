@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine Vianna?</title>
+    <style>
+        body {
+            background-color: pink;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding-top: 100px;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+        h1 {
+            color: red;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .yes {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        .no {
+            background-color: #ff9999;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be My Valentine Vianna Bafna? 💖</h1>
+        <button class="yes" onclick="yesAnswer()">Yes 😊</button>
+        <button class="no" onclick="noAnswer()">No 😢</button>
+    </div>
+
+    <script>
+        function yesAnswer() {
+            document.body.innerHTML = `
+                <div style="text-align:center; padding-top: 100px;">
+                    <h1 style="color: red;">Yay! 💖 Can't wait for our special day! 😍</h1>
+                    <img src="https://media.giphy.com/media/7WHITBxbuhlB9yAq3i/giphy.gif?cid=ecf05e47e2id3d1odzr1nok65vpytxoq21yrpas4l4h8l0vk&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="300">
+                </div>`;
+        }
+
+        function noAnswer() {
+            alert("Wrong choice, try again! 😜");
+            location.reload();
+        }
+    </script>
+</body>
+</html>
